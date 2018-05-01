@@ -27,7 +27,6 @@
       </p>
     </div>
 
-
     <p>She said that he loved baseball, and James Earl Jones; said that he's got god talking inside of his thoughts while he's
       rounding those bases on his way back home</p>
 
@@ -153,6 +152,54 @@
       font-style: italic;
       font-weight: 100;
       margin: 0;
+    }
+
+    .post {
+      display: grid;
+      max-width: 1000px;
+      margin: 200px auto;
+      grid-gap: 10px 50px;
+      grid-template-columns: 3fr 12fr 5fr;
+    }
+
+    .post>* {
+      grid-column: 2 / -2;
+    }
+
+    .post>figure {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    .post>blockquote {
+      grid-column: 1 / -1;
+      font-size: 60px;
+      font-style: italic;
+      text-align: center;
+      margin: 0;
+    }
+
+    .tip {
+      background: #FAFAFA;
+      padding: 10px;
+      grid-row: span 5;
+      align-self: start;
+    }
+
+    .tip-left {
+      grid-column: 1 / span 1;
+      text-align: right;
+      border-right: 2px solid var(--yellow);
+    }
+
+    .tip-right {
+      grid-column: span 1 / -1;
+      text-align: left;
+      border-left: 2px solid var(--yellow);
     }
   </style>
 
